@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    
+    <title>Challenge encriptador</title>
+</head>
+
+<body>
+    <header>
+        <h1><img src="imagenes/Logo.png" class="logo"></h1>
+    </header>
+    
+    <main>
+        <section>
+            <textarea id="texto" required placeholder="Ingrese el texto aqui" cols="30" rows="10"></textarea>
+                <div>
+                    <p class="wrn">&#9432; Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="botones">
+                    <button class="boton_encriptar" onclick="boton_encriptar()">Encriptar</button>
+                    <button class="boton_desencriptar" onclick="boton_desencriptar()">Desencriptar</button>
+                </div>
+        </section>
+
+            <section>
+                <textarea id="resultado" disabled cols="20" rows="10"></textarea>
+                <div>
+                    <button id="copiar" onclick="copiar()">Copiar</button>
+                </div>
+            </section>
+    </main>
+
+    <footer>
+        
+    </footer>
+</body>
+
+<script src="script.js"></script>
+</html>
